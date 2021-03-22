@@ -30,7 +30,7 @@ if __name__ == '__main__':
                     json=rating_payload,
                 )
                 print(temp.json())
-                time.sleep(5)
+                time.sleep(2)
         message = f'Rating successful with {len(TOKEN_LIST)} accounts.'
     except Exception as e:
         print('Rating error: ' + str(e))
