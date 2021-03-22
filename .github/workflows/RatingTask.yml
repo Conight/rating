@@ -35,4 +35,4 @@ jobs:
         TOKEN_LIST: ${{ secrets.TOKEN_LIST }}
         TG_CONFIG: ${{ secrets.TG_CONFIG }}
       run: |
-        python main.py
+        python -u main.py
