@@ -32,7 +32,7 @@ jobs:
         pip install -r requirements.txt
     - name: Build and publish
       env:
-        USERS_COVER: ${{ secrets.USERS_COVER }}
+        TOKEN_LIST: ${{ secrets.TOKEN_LIST }}
         TG_CONFIG: ${{ secrets.TG_CONFIG }}
       run: |
         python main.py

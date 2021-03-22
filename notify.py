@@ -6,8 +6,8 @@ import requests
 
 def send_to_telegram(token_info, message):
     try:
-        token = token_info['tgToken']
-        user_id = token_info['tgUserId']
+        token = token_info['token']
+        user_id = token_info['user_id']
         message = urllib.parse.urlencode(message)
         url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={user_id}&text={message}'
         resp = requests.get(url)
